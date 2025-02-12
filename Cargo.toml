@@ -1,10 +1,10 @@
 [package]
-name = "hello_rust"
+name = "tokenblitz"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "hello_rust"
+name = "tokenblitz"
 crate-type = ["cdylib"]
 
 [dependencies]
