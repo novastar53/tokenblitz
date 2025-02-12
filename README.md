@@ -1,6 +1,6 @@
 # TokenBlitz
 
-A Python module built with Rust that provides a simple "Hello, World!" functionality.
+Fast tokenization built in Rust
 
 ## Installation
 
@@ -14,13 +14,10 @@ maturin develop
 ## Usage
 
 ```python
-import hello_rust
+import tokenblitz
 
 # Basic usage - returns "Hello, World!"
-print(hello_rust.say_hello())
-
-# With a name parameter - returns "Hello, {name}!"
-print(hello_rust.say_hello("Rust"))
+print(tokenblitz.tokenize("Hello, World!"))
 ```
 
 ## Development
