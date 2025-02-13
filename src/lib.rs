@@ -1,9 +1,12 @@
 use pyo3::prelude::*;
 
+pub fn tokenize_text(input: &str) -> Vec<String> {
+    input.split_whitespace().map(|s| s.to_string()).collect()
+}
+
 #[pyfunction]
 fn tokenize(input: String) -> PyResult<Vec<String>> {
-    let words: Vec<String> = input.split_whitespace().map(|s| s.to_string()).collect();
-    Ok(words)
+    Ok(tokenize_text(&input))
 }
 
 #[pymodule]
